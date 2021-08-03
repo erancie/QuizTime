@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".result">
+
+    <TextView
+        android:id="@+id/player"
+        android:layout_width="149dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="47dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toEndOf="@+id/congratsText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreResult"
+        android:layout_width="169dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="121dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourScoreText" />
+
+    <Button
+        android:id="@+id/newQuiz"
+        android:layout_width="142dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="159dp"
+        android:text="New Quiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreResult" />
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="148dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="160dp"
+        android:text="Finish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newQuiz" />
+
+    <TextView
+        android:id="@+id/yourScoreText"
+        android:layout_width="218dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="124dp"
+        android:text="Your Score"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player" />
+
+    <TextView
+        android:id="@+id/congratsText"
+        android:layout_width="184dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:text="Congratulations"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
